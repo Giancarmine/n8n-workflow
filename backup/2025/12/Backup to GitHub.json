@@ -1,9 +1,9 @@
 {
   "active": true,
   "activeVersion": {
-    "updatedAt": "2025-12-12T14:28:36.518Z",
-    "createdAt": "2025-12-12T14:28:36.518Z",
-    "versionId": "f01be950-65d2-4d66-80ed-b18c98afb038",
+    "updatedAt": "2025-12-12T14:35:49.077Z",
+    "createdAt": "2025-12-12T14:35:49.077Z",
+    "versionId": "73c79cd4-5f1c-47f0-93c9-d182f0c771a0",
     "workflowId": "e3ENKYlla0Kzzou3",
     "nodes": [
       {
@@ -40,7 +40,7 @@
         "type": "n8n-nodes-base.executeWorkflowTrigger",
         "position": [
           -832,
-          160
+          128
         ],
         "typeVersion": 1
       },
@@ -83,7 +83,7 @@
         "type": "n8n-nodes-base.set",
         "position": [
           816,
-          -48
+          -80
         ],
         "typeVersion": 3.3
       },
@@ -97,7 +97,7 @@
         "type": "n8n-nodes-base.httpRequest",
         "position": [
           0,
-          -144
+          -176
         ],
         "typeVersion": 4.2
       },
@@ -140,7 +140,7 @@
         "type": "n8n-nodes-base.if",
         "position": [
           -240,
-          -128
+          -160
         ],
         "typeVersion": 2
       },
@@ -151,7 +151,7 @@
         "type": "n8n-nodes-base.merge",
         "position": [
           -240,
-          144
+          112
         ],
         "typeVersion": 2
       },
@@ -164,7 +164,7 @@
         "type": "n8n-nodes-base.code",
         "position": [
           -32,
-          144
+          112
         ],
         "typeVersion": 1
       },
@@ -193,7 +193,7 @@
         "type": "n8n-nodes-base.switch",
         "position": [
           368,
-          144
+          112
         ],
         "typeVersion": 1
       },
@@ -204,7 +204,7 @@
         "type": "n8n-nodes-base.noOp",
         "position": [
           592,
-          -32
+          -64
         ],
         "typeVersion": 1
       },
@@ -215,7 +215,7 @@
         "type": "n8n-nodes-base.noOp",
         "position": [
           592,
-          144
+          112
         ],
         "typeVersion": 1
       },
@@ -226,7 +226,7 @@
         "type": "n8n-nodes-base.noOp",
         "position": [
           592,
-          336
+          304
         ],
         "typeVersion": 1
       },
@@ -253,7 +253,7 @@
         "type": "n8n-nodes-base.github",
         "position": [
           816,
-          336
+          304
         ],
         "typeVersion": 1,
         "webhookId": "1d29f02f-f507-4aa7-88f2-e551603238a2",
@@ -288,7 +288,7 @@
         "type": "n8n-nodes-base.github",
         "position": [
           816,
-          144
+          112
         ],
         "typeVersion": 1,
         "webhookId": "076be8f9-699b-4756-84a0-df82faaf7aa0",
@@ -352,7 +352,7 @@
         "type": "n8n-nodes-base.set",
         "position": [
           160,
-          144
+          112
         ],
         "typeVersion": 3.3
       },
@@ -419,7 +419,7 @@
             "value": "={{ $json.repo_name }}",
             "mode": ""
           },
-          "filePath": "={{ $json.repo_path }}{{ $('Execute Workflow Trigger').first().json.createdAt.split('-')[0] }}/{{ $('Execute Workflow Trigger').first().json.createdAt.split('-')[1] }}/{{$json.id}}.json",
+          "filePath": "={{ $json.repo_path }}{{ $('Execute Workflow Trigger').first().json.createdAt.split('-')[0] }}/{{ $('Execute Workflow Trigger').first().json.createdAt.split('-')[1] }}/{{$json.name}}.json",
           "asBinaryProperty": false,
           "additionalParameters": {}
         },
@@ -428,7 +428,7 @@
         "type": "n8n-nodes-base.github",
         "position": [
           -432,
-          -128
+          -160
         ],
         "typeVersion": 1,
         "alwaysOutputData": true,
@@ -473,7 +473,7 @@
         "type": "n8n-nodes-base.set",
         "position": [
           -432,
-          160
+          128
         ],
         "typeVersion": 3.4
       },
@@ -524,7 +524,7 @@
         "typeVersion": 1,
         "position": [
           -624,
-          160
+          128
         ],
         "id": "7b46d542-135b-4f57-bb09-04e872fc413c",
         "name": "Get GitHub Constants",
@@ -888,7 +888,7 @@
     "name": null,
     "description": null
   },
-  "activeVersionId": "f01be950-65d2-4d66-80ed-b18c98afb038",
+  "activeVersionId": "73c79cd4-5f1c-47f0-93c9-d182f0c771a0",
   "connections": {
     "n8n": {
       "main": [
@@ -1236,7 +1236,7 @@
       "type": "n8n-nodes-base.executeWorkflowTrigger",
       "position": [
         -832,
-        160
+        128
       ],
       "typeVersion": 1
     },
@@ -1279,7 +1279,7 @@
       "type": "n8n-nodes-base.set",
       "position": [
         816,
-        -48
+        -80
       ],
       "typeVersion": 3.3
     },
@@ -1293,7 +1293,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "position": [
         0,
-        -144
+        -176
       ],
       "typeVersion": 4.2
     },
@@ -1336,7 +1336,7 @@
       "type": "n8n-nodes-base.if",
       "position": [
         -240,
-        -128
+        -160
       ],
       "typeVersion": 2
     },
@@ -1347,7 +1347,7 @@
       "type": "n8n-nodes-base.merge",
       "position": [
         -240,
-        144
+        112
       ],
       "typeVersion": 2
     },
@@ -1360,7 +1360,7 @@
       "type": "n8n-nodes-base.code",
       "position": [
         -32,
-        144
+        112
       ],
       "typeVersion": 1
     },
@@ -1389,7 +1389,7 @@
       "type": "n8n-nodes-base.switch",
       "position": [
         368,
-        144
+        112
       ],
       "typeVersion": 1
     },
@@ -1400,7 +1400,7 @@
       "type": "n8n-nodes-base.noOp",
       "position": [
         592,
-        -32
+        -64
       ],
       "typeVersion": 1
     },
@@ -1411,7 +1411,7 @@
       "type": "n8n-nodes-base.noOp",
       "position": [
         592,
-        144
+        112
       ],
       "typeVersion": 1
     },
@@ -1422,7 +1422,7 @@
       "type": "n8n-nodes-base.noOp",
       "position": [
         592,
-        336
+        304
       ],
       "typeVersion": 1
     },
@@ -1449,7 +1449,7 @@
       "type": "n8n-nodes-base.github",
       "position": [
         816,
-        336
+        304
       ],
       "typeVersion": 1,
       "webhookId": "1d29f02f-f507-4aa7-88f2-e551603238a2",
@@ -1484,7 +1484,7 @@
       "type": "n8n-nodes-base.github",
       "position": [
         816,
-        144
+        112
       ],
       "typeVersion": 1,
       "webhookId": "076be8f9-699b-4756-84a0-df82faaf7aa0",
@@ -1548,7 +1548,7 @@
       "type": "n8n-nodes-base.set",
       "position": [
         160,
-        144
+        112
       ],
       "typeVersion": 3.3
     },
@@ -1615,7 +1615,7 @@
           "value": "={{ $json.repo_name }}",
           "mode": ""
         },
-        "filePath": "={{ $json.repo_path }}{{ $('Execute Workflow Trigger').first().json.createdAt.split('-')[0] }}/{{ $('Execute Workflow Trigger').first().json.createdAt.split('-')[1] }}/{{$json.id}}.json",
+        "filePath": "={{ $json.repo_path }}{{ $('Execute Workflow Trigger').first().json.createdAt.split('-')[0] }}/{{ $('Execute Workflow Trigger').first().json.createdAt.split('-')[1] }}/{{$json.name}}.json",
         "asBinaryProperty": false,
         "additionalParameters": {}
       },
@@ -1624,7 +1624,7 @@
       "type": "n8n-nodes-base.github",
       "position": [
         -432,
-        -128
+        -160
       ],
       "typeVersion": 1,
       "alwaysOutputData": true,
@@ -1669,7 +1669,7 @@
       "type": "n8n-nodes-base.set",
       "position": [
         -432,
-        160
+        128
       ],
       "typeVersion": 3.4
     },
@@ -1720,7 +1720,7 @@
       "typeVersion": 1,
       "position": [
         -624,
-        160
+        128
       ],
       "id": "7b46d542-135b-4f57-bb09-04e872fc413c",
       "name": "Get GitHub Constants",
@@ -1803,6 +1803,6 @@
   },
   "tags": [],
   "triggerCount": 1,
-  "updatedAt": "2025-12-12T14:29:43.778Z",
-  "versionId": "f01be950-65d2-4d66-80ed-b18c98afb038"
+  "updatedAt": "2025-12-12T14:35:49.181Z",
+  "versionId": "73c79cd4-5f1c-47f0-93c9-d182f0c771a0"
 }
